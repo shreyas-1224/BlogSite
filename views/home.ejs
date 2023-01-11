@@ -2,15 +2,7 @@
 
 
     <div class="container">
-        <h1 class="mb-3">Home</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat ratione ipsam dolorum ipsum sapiente
-            pariatur odit. Saepe molestias, consectetur similique velit, veritatis rerum omnis reiciendis sapiente
-            mollitia laboriosam magnam doloribus at ab ducimus?Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Hic eum mollitia quod pariatur, ut ab nisi. Nulla blanditiis laboriosam, minima, asperiores quaerat, numquam
-            eligendi sint rerum officiis ducimus veritatis hic amet similique architecto reiciendis! Exercitationem
-            pariatur ex, enim blanditiis maiores ut doloremque consectetur alias accusamus expedita culpa quod qui dicta
-            recusandae unde at quaerat modi necessitatibus rerum autem, odio maxime nam minus? Veniam aperiam porro
-            praesentium dicta?</p>
+
         <% for(var i=0; i < post_array.length ; i++) { %>
 
             <h1>
@@ -18,10 +10,9 @@
             </h1>
             <p>
                 <%= (post_array[i].blog_text).substring(0,100) %>
-                    <span><a href="/posts/<%= post_array[i].blog_title %>" style="text-decoration: none;">...read
+                    <span><a href="/posts/<%= post_array[i]._id %>" style="text-decoration: none;">...read
                             more</a></span>
             </p>
-
             <% } %>
     </div>
 
