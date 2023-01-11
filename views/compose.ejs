@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') -%>
+<div class="container">
+    <h1>Compose</h1>
+    <form action="/" , method="POST">
+        <div class="form-group mb-1">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" name= "blog_title" placeholder="put title here">
+        </div>
+
+        <div class="form-group mb-2">
+          <label for="blog_id">text</label>
+          <textarea class="form-control" rows="5" name= "blog_text" placeholder="What's up?" required ></textarea>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</div>
+</div>
+
+    <%- include('partials/footer.ejs') -%>
